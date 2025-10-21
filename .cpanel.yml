@@ -1,10 +1,7 @@
 ---
 deployment:
   tasks:
-    # 1️⃣ Define your live site directory
     - export DEPLOYPATH=/home1/spreaeb3/public_html/cleansewaters.site/
-
-    # 2️⃣ Sync files from the repo to your live site
     - /bin/rsync -av --delete \
         --exclude '.git*' \
         --exclude '.cpanel.yml' \
