@@ -1,7 +1,7 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home1/spreaeb3/public_html/cleansingwaters.site/
+    - export DEPLOYPATH=/home1/spreaeb3/public_html/cleansingwaters/
     - /bin/rsync -av --delete \
       --exclude '.git*' \
       --exclude '.cpanel.yml' \
